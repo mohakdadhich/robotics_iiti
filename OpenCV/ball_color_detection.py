@@ -35,7 +35,7 @@ def detect_balls(image_path):
     cv.waitKey(0)
     cv.destroyAllWindows()
 
-image_path = "Ball color detection\color_ball1.jpeg"
+image_path = "OpenCV\color_ball_2.png"
 
 detect_balls(image_path)
 

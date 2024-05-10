@@ -1,6 +1,6 @@
 import cv2 as cv
 
-haarcas= "Robotics\haarcascade_frontalface_default.xml"
+haarcas= "OpenCV\haarcascade_frontalface_default.xml"
 def detectFace(img_path):
     img = cv.imread(img_path)
     face_cascade = cv.CascadeClassifier(haarcas)
@@ -14,5 +14,5 @@ def detectFace(img_path):
     cv.waitKey(0) & 0xFF == ord('q')
     cv.destroyAllWindows()
 
-img_path = "Robotics\\face1.png"
+img_path = "OpenCV\detect_face3.png"
 detectFace(img_path)
